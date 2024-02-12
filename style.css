@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.messenger__wrapper {
+    background-color: #9747ff;
+    position: relative;
+}
+
+.messenger__header {
+    background-color: #14ae5c;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.messenger__main {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.messenger-item {
+    width: 100%;
+    max-width: 215px;
+    background-color: #ffcd29;
+    font-size: 15px;
+    color: #40330a;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.messenger__btn {
+    background-color: #f24822;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.messenger__btn:hover {
+    opacity: 95%;
+}
+
+.user-2 {
+    margin-left: auto;
+    background-color: #fff129;
+}
+
+#style-scrooll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+
+#style-scrooll::-webkit-scrollbar {
+    width: 3px;
+    background-color: #ffffff;
+}
+
+#style-scrooll::-webkit-scrollbar-thumb {
+    background-color: #5b289e;
+    border: 1px solid #555555;
+}
+
+@media (max-width: 575px) {
+    .messenger__main {
+        height: 100vh;
+        padding: 15px;
+    }
+
+    .messenger__btn {
+        position: sticky;
+        bottom: 0;
+    }
+
+    .messenger__header {
+        top: 0;
+        position: sticky;
+
+    }
+}
